@@ -9,7 +9,7 @@ const rename = async () => {
         await _rename(fileWrong, file);
     } catch (err) {
         throw new Error(ERROR_MSG);
-    } 
+    }
 };
 
 await rename();
