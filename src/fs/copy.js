@@ -1,4 +1,4 @@
-import { cp, mkdir } from "fs/promises"
+import { cp } from "fs/promises"
 import { dirPath, ERROR_MSG } from "../utils.js";
 
 const copy = async () => {
