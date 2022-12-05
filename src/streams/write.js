@@ -1,5 +1,8 @@
+import { createWriteStream } from "fs"
+import { dirPath } from "../utils.js";
+
 const write = async () => {
-    // Write your code here 
+    process.stdin.pipe(createWriteStream(`${(await dirPath(import.meta.url))}/files/fileToWrite.txt`));
 };
 
 await write();
